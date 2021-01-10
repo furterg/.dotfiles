@@ -1,0 +1,94 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+# [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	df="df -h" \
+	mv="mv -iv" \
+	free="free -m" \
+	more="less" \
+	rm="rm -vI"
+
+# For youtube viewer and downloader
+alias \
+	mkd="mkdir -pv" \
+	yt='youtube-dl --audio-format "best" --add-metadata -i' \
+	yte='yt --exec "mpv"' \
+	ytv="yte" \
+	yta="yt -x -f bestaudio/best" \
+	YT="youtube-viewer -C --safe-search=none --player=mpv --ytdl-cmd=yt" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# alias yt="youtube-dl --add-metadata -i"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	egrep="egrep --color=auto" \
+	fgrep="fgrep --color=auto" \
+	greg="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	g="git" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	p="sudo pacman" \
+	z="zathura" \
+	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+	cfi="vim $HOME/.config/i3/config" \
+	cfv="vim $HOME/.vimrc" \
+	cfa="vim $HOME/.config/aliasrc"
+
+# Aliases for connecting, disconnect and checking status of protonvpn.
+alias \
+	cvpn="sudo protonvpn c -f" \
+	cv="sudo protonvpn c -f" \
+	dvpn="sudo protonvpn d" \
+	dv="sudo protonvpn d" \
+	svpn="sudo protonvpn s" \
+	sv="sudo protonvpn s"
+
+# Git alias for managing dotfiles
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot=dotfiles
+
+# alias \
+# 	magit="nvim -c MagitOnly" \
+# 	ref="shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/zshnameddirrc" \
+# 	weath="less -S ${XDG_DATA_HOME:-$HOME/.local/share}/weatherreport" \
+# 	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
+
+
+# # ex - archive extractor (not really an alias, but works like it is)
+# # usage: ex <file>
+ex ()
+{
+  if [ -f $1 ] ; then
+    case $1 in
+      *.tar.bz2)   tar xjf $1   ;;
+      *.tar.gz)    tar xzf $1   ;;
+      *.bz2)       bunzip2 $1   ;;
+      *.rar)       unrar x $1     ;;
+      *.gz)        gunzip $1    ;;
+      *.tar)       tar xf $1    ;;
+      *.tbz2)      tar xjf $1   ;;
+      *.tgz)       tar xzf $1   ;;
+      *.zip)       unzip $1     ;;
+      *.Z)         uncompress $1;;
+      *.7z)        7z x $1      ;;
+      *)           echo "'$1' cannot be extracted via ex()" ;;
+    esac
+  else
+    echo "'$1' is not a valid file"
+  fi
+}

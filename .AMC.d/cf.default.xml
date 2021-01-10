@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<global>
+  <SMTP></SMTP>
+  <annote_chsign>4</annote_chsign>
+  <annote_ecart>5.5</annote_ecart>
+  <annote_font_name>Linux Libertine O 12</annote_font_name>
+  <ascii_filenames>1</ascii_filenames>
+  <assoc_ncols>4</assoc_ncols>
+  <assoc_window_size></assoc_window_size>
+  <box_size_proportion>0.8</box_size_proportion>
+  <bw_threshold>0.6</bw_threshold>
+  <checklayout_window_size>900x1255+1625+31</checklayout_window_size>
+  <conserve_taille>1</conserve_taille>
+  <csv_name_headers></csv_name_headers>
+  <csv_surname_headers></csv_surname_headers>
+  <csv_viewer>libreoffice</csv_viewer>
+  <defaut_annote_rtl></defaut_annote_rtl>
+  <defaut_email_subject>Exam result</defaut_email_subject>
+  <defaut_email_text>Please find enclosed your annotated completed answer sheet.
+Regards.</defaut_email_text>
+  <defaut_encodage_csv>UTF-8</defaut_encodage_csv>
+  <defaut_encodage_liste>UTF-8</defaut_encodage_liste>
+  <defaut_moteur_latex_b>xelatex</defaut_moteur_latex_b>
+  <defaut_note_arrondi>inf</defaut_note_arrondi>
+  <defaut_note_grain>0.5</defaut_note_grain>
+  <defaut_note_max>20</defaut_note_max>
+  <defaut_note_max_plafond>1</defaut_note_max_plafond>
+  <defaut_note_min></defaut_note_min>
+  <defaut_note_null>0</defaut_note_null>
+  <defaut_seuil>0.15</defaut_seuil>
+  <defaut_seuil_up>1</defaut_seuil_up>
+  <defaut_verdict>%(ID)
+Mark: %s/%m (total score: %S/%M)</defaut_verdict>
+  <defaut_verdict_q>&quot;%s/%m&quot;</defaut_verdict_q>
+  <defaut_verdict_qc>&quot;X&quot;</defaut_verdict_qc>
+  <delimiteur_decimal>,</delimiteur_decimal>
+  <dir_opener>dolphin %d</dir_opener>
+  <email_bcc></email_bcc>
+  <email_cc></email_cc>
+  <email_delay>0</email_delay>
+  <email_sender></email_sender>
+  <email_sendmail_path>/usr/sbin/sendmail</email_sendmail_path>
+  <email_smtp_host>smtp</email_smtp_host>
+  <email_smtp_port>25</email_smtp_port>
+  <email_smtp_ssl>0</email_smtp_ssl>
+  <email_smtp_user></email_smtp_user>
+  <email_transport>sendmail</email_transport>
+  <embedded_format>jpeg</embedded_format>
+  <embedded_jpeg_quality>75</embedded_jpeg_quality>
+  <embedded_max_size>1000x1500</embedded_max_size>
+  <encodage_interne>UTF-8</encodage_interne>
+  <encodage_latex>UTF-8</encodage_latex>
+  <force_convert></force_convert>
+  <html_browser>brave %u</html_browser>
+  <ignore_red></ignore_red>
+  <img_viewer>gwenview</img_viewer>
+  <imprimante></imprimante>
+  <mailing_window_size></mailing_window_size>
+  <manual_window_size></manual_window_size>
+  <manuel_image_type>xpm</manuel_image_type>
+  <marks_window_size></marks_window_size>
+  <methode_impression>file</methode_impression>
+  <n_procs>0</n_procs>
+  <nonascii_projectnames></nonascii_projectnames>
+  <notify_annotation>1</notify_annotation>
+  <notify_capture>1</notify_capture>
+  <notify_command></notify_command>
+  <notify_desktop>1</notify_desktop>
+  <notify_documents></notify_documents>
+  <notify_grading>1</notify_grading>
+  <ods_viewer>libreoffice</ods_viewer>
+  <options_impression>
+    <number-up>1</number-up>
+    <print_answersheet></print_answersheet>
+    <repertoire>%HOME/Dropbox/01-QCM/BSG/2020/202012-survey/sujets</repertoire>
+    <sides>two-sided-long-edge</sides>
+  </options_impression>
+  <pdf_viewer>zathura</pdf_viewer>
+  <preferences_window_size>888x1481+941+-4</preferences_window_size>
+  <prepare_catalog>1</prepare_catalog>
+  <prepare_indiv_solution>1</prepare_indiv_solution>
+  <prepare_solution>1</prepare_solution>
+  <print_command_pdf>lpr %f</print_command_pdf>
+  <print_extract_with>gs</print_extract_with>
+  <printer_useful_options>Staple Stapling StapleLocation StapleSet StapleOption</printer_useful_options>
+  <project_icon_size>16</project_icon_size>
+  <projects_home>%HOME/Dropbox/01-QCM/_AMC/Projets-QCM</projects_home>
+  <rep_modeles>/home/greg/Dropbox/01-QCM/_AMC/Models</rep_modeles>
+  <rep_projets>/home/greg/Dropbox/01-QCM/_AMC/Projets-QCM</rep_projets>
+  <saisie_dpi>150</saisie_dpi>
+  <seuil_eqm>3</seuil_eqm>
+  <seuil_sens>8</seuil_sens>
+  <symbole_0_0_color>#000000000000</symbole_0_0_color>
+  <symbole_0_0_type>none</symbole_0_0_type>
+  <symbole_0_1_color>#ffff00000000</symbole_0_1_color>
+  <symbole_0_1_type>circle</symbole_0_1_type>
+  <symbole_1_0_color>#ffff00000000</symbole_1_0_color>
+  <symbole_1_0_type>mark</symbole_1_0_type>
+  <symbole_1_1_color>#00000000ffff</symbole_1_1_color>
+  <symbole_1_1_type>mark</symbole_1_1_type>
+  <symboles_indicatives></symboles_indicatives>
+  <symboles_trait>2</symboles_trait>
+  <taille_x_main>2528</taille_x_main>
+  <taille_y_main>1345</taille_y_main>
+  <tex_editor>texmaker</tex_editor>
+  <tolerance_marque_inf>0.2</tolerance_marque_inf>
+  <tolerance_marque_sup>0.2</tolerance_marque_sup>
+  <try_three>1</try_three>
+  <txt_editor>gvim</txt_editor>
+  <vector_scan_density>250</vector_scan_density>
+  <view_empty_color>#7878ffffeded</view_empty_color>
+  <view_invalid_color>#ffffefef3b3b</view_invalid_color>
+  <xml_viewer>gvim</xml_viewer>
+  <zoom_window_factor>1</zoom_window_factor>
+  <zoom_window_height>400</zoom_window_height>
+  <zooms_edit_mode>0</zooms_edit_mode>
+  <zooms_ncols>4</zooms_ncols>
+</global>
