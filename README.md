@@ -19,3 +19,10 @@ From the technical information gathered here (https://medium.com/toutsbrasil/how
 ### checkout the actual content from the git repository to your `$HOME`
 
 `dotfiles checkout`
+
+### connecting the new computer to the github account
+
+You need to generate a token for that.
+
+See details here: https://gmacario.github.io/2017/08/08/cmdline-git-with-github-2fa.html
+
