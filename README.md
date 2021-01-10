@@ -1,6 +1,6 @@
 # .dotfiles
 
-This is the uptenth attempt to track my dotfiles :-)
+This is the umpteenth attempt to track my dotfiles :-)
 
 # Setting the environment
 
