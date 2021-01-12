@@ -15,7 +15,7 @@ set ignorecase true
 cmd open ${{
     case $(file --mime-type "$f" -bL) in
         text/*|application/json) $EDITOR "$f";;
-        application/pdf) okular "$f";;
+        application/pdf) zathura "$f";;
         image/*) feh "$f";;
         video/*) mpv "$f";;
         *) xdg-open "$f" ;;
