@@ -18,6 +18,9 @@ floating_modifier $mod
 set $term konsole --hide-menubar
 # define screencasting command to run
 set $screencast zsh $HOME/.scripts/screencast.sh
+# define help file to generate
+set $help pandoc -f markdown -t pdf $HOME/.config/help.md | zathura -
+bindsym $mod+F1 $help
 
 #########################  Gaps defaults  #########################
 # This is valid for i3-gaps and will generate an error if using i3-wm alone.
@@ -245,6 +248,7 @@ bindsym $mod+$alt+j 		exec joplin-desktop
 bindsym $mod+$alt+g 		exec steam ; workspace 9:Steam
 bindsym $mod+$alt+m 		exec thunderbird ; workspace 3:Mail
 bindsym $mod+$alt+w 		exec remmina ; workspace 10:TS
+bindsym $mod+$alt+z 		exec zoom
 
 # this will start screen and sound recording or stop it if already started.
 bindsym $mod+$alt+s 		exec $screencast
