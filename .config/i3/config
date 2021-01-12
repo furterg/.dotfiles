@@ -19,8 +19,9 @@ set $term konsole --hide-menubar
 # define screencasting command to run
 set $screencast zsh $HOME/.scripts/screencast.sh
 # define help file to generate
-set $help pandoc -f markdown -t pdf $HOME/.config/help.md | zathura -
-bindsym $mod+F1 $help
+# set $help exec --no-startup-id pandoc --pdf-engine=xelatex --toc --highlight-style=breezedark -V geometry:"top=2cm, bottom=1.5cm, left=2cm, right=2cm" -f markdown -t pdf $HOME/.config/help.md | zathura -
+set $help "pandoc --pdf-engine=xelatex --toc --highlight-style=breezedark -V geometry:'top=2cm, bottom=1.5cm, left=2cm, right=2cm' -f markdown -t pdf $HOME/.config/help.md | zathura -"
+bindsym $mod+F1 exec --no-startup-id $help
 
 #########################  Gaps defaults  #########################
 # This is valid for i3-gaps and will generate an error if using i3-wm alone.
@@ -265,6 +266,10 @@ assign [class=brave-browser|Firefox|Transmission-gtk] 1
 assign [class=Mail|Thunderbird|akregator] → number "3:Mail"
 assign [class=org.remmina.Remmina] → number "10:TS"
 assign [class=Steam] → number "9:Steam"
+
+# set zathura help file to be floatting
+for_window [title=zathura.stdin] floating enable
+for_window [title=zathura.stdin] resize set height 90 ppt ; move position center
 
 for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|mpv|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
 
