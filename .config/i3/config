@@ -271,6 +271,10 @@ assign [class=Steam] → number "9:Steam"
 for_window [title=zathura.stdin] floating enable
 for_window [title=zathura.stdin] resize set height 90 ppt ; move position center
 
+# Set zoom meetings floating
+for_window [title="Zoom Meeting"] floating enable
+for_window [title="Zoom Meeting"] move position center
+
 for_window [class=URxvt|Firefox|Geany|Evince|Soffice|libreoffice*|mpv|Ghb|Xfburn|Gimp*|Inkscape|Vlc|Lxappearance|Audacity] focus
 
 # Have VLC and mpv start floatting with no border
