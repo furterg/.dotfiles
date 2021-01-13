@@ -26,3 +26,27 @@ You need to generate a token for that.
 
 See details here: https://gmacario.github.io/2017/08/08/cmdline-git-with-github-2fa.html
 
+# Problem solving
+
+## problem with xdg-open, kfmclient, xdg-settings and kwriteconfig
+
+It appears that some KDE command have changed recently. To make everything work, it looks like we need make links with old command names:
+
+```
+sudo ln /usr/bin/kioclient5 /usr/bin/kfmclient
+sudo ln /usr/bin/kwriteconfig5 /usr/bin/kwriteconfig
+```
+To set default client:
+```
+xdg-settings set default-web-browser chromium.desktop
+```
+
+Maybe usr a fil to define the default apps. Could be located in `~/.config/mimeapps.list` and/or (not sure) `~/.local/share/applications/default.list`.
+
+So I stored it in the first location and made a link:
+```
+ln -s ~/.config/mimeapps.list ~/.local/share/applications/default.list
+```
+
+
+
