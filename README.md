@@ -47,6 +47,8 @@ So I stored it in the first location and made a link:
 ```
 ln -s ~/.config/mimeapps.list ~/.local/share/applications/default.list
 ```
+## icons not showing properly on i3status bar
 
+The icons rely on the package `ttf-icomoon-feather`
 
 
