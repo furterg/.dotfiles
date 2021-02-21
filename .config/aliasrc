@@ -47,7 +47,9 @@ alias \
 	tmux="tmux -f ${XDG_CONFIG_HOME:-$HOME/.config}/tmux/tmux.conf" \
 	cfi="vim $HOME/.config/i3/config" \
 	cfv="vim $HOME/.vimrc" \
-	cfa="vim $HOME/.config/aliasrc"
+	cfa="vim $HOME/.config/aliasrc" \
+	anaconda="/opt/anaconda/bin/anaconda-navigator" \
+	sideria="ssh root@195.133.81.76"
 
 # Aliases for connecting, disconnect and checking status of protonvpn.
 alias \

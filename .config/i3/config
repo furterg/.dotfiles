@@ -25,6 +25,7 @@ bindsym $mod+F1 exec --no-startup-id $help
 
 #########################  Gaps defaults  #########################
 # This is valid for i3-gaps and will generate an error if using i3-wm alone.
+smart_gaps on
 gaps inner 10
 gaps outer 2
 
@@ -38,7 +39,7 @@ font pango:DejaVu Sans Mono 10
 
 # Defines opacity for menus (-m) and inactive windows (-i)
 exec --no-startup-id picom -b
-exec --no-startup-id xautolock -time 15 -locker '~/.scripts/screenlock.sh' &
+exec xautolock -time 15 -bell 0 -notify 15 -notifier 'notify-send "Screensaver" "$(echo -e "Screen saver will launch soon.")"' -locker '~/.scripts/screenlock.sh' &
 
 # colour of border, background, text, indicator, and child_border
 client.focused              #bf616a #2f343f #d8dee8 #bf616a #d8dee8

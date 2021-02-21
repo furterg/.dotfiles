@@ -4,7 +4,10 @@
 # ============================================================
 # set previewer ~/.config/lf/preview
 # Basic Settings
-set preview true
+# set preview true
+# set preview
+# set previewer "less -k ~/.config/less.lesskey"
+
 set hidden true
 # set color256 true
 set drawbox true

@@ -1,5 +1,6 @@
 [Added Associations]
 application/pdf=org.pwmt.zathura.desktop;okularApplication_pdf.desktop;
+application/x-bittorrent=deluge.desktop;
 application/x-desktop=gvim.desktop;org.kde.kate.desktop;libreoffice-writer.desktop;okularApplication_txt.desktop;vim.desktop;
 application/x-remmina=org.remmina.Remmina.desktop;
 inode/directory=org.kde.dolphin.desktop;
@@ -13,6 +14,7 @@ x-scheme-handler/vnc=org.remmina.Remmina.desktop;
 
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop;
+application/x-bittorrent=deluge.desktop;
 application/x-desktop=gvim.desktop;
 application/x-remmina=org.remmina.Remmina.desktop
 inode/directory=org.kde.dolphin.desktop;
