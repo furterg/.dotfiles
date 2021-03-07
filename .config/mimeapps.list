@@ -11,6 +11,7 @@ x-scheme-handler/remmina=org.remmina.Remmina.desktop;
 x-scheme-handler/spice=org.remmina.Remmina.desktop;
 x-scheme-handler/tg=userapp-Telegram Desktop-OEN0V0.desktop;
 x-scheme-handler/vnc=org.remmina.Remmina.desktop;
+video/mp4=mpv.desktop;
 
 [Default Applications]
 application/pdf=org.pwmt.zathura.desktop;
