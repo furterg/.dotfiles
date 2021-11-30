@@ -6,7 +6,7 @@
 if [[ $(pgrep -a ffmpeg | grep screencast | awk '{print $1}') ]]
 	then
 		kill $(pgrep -a ffmpeg | grep screencast | awk '{print $1}')
-		notify-send "Scrrencasting" "$(echo -e "Screencast recording ended")"
+		notify-send "Screencasting" "$(echo -e "Screencast recording ended")"
 	else
 		# Define the filename based on the date
 		fname='screencast_'$(date +%+4Y%m%d)

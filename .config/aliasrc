@@ -49,7 +49,8 @@ alias \
 	cfv="vim $HOME/.vimrc" \
 	cfa="vim $HOME/.config/aliasrc" \
 	anaconda="/opt/anaconda/bin/anaconda-navigator" \
-	sideria="ssh root@195.133.81.76"
+	sideria="ssh root@195.133.81.76" \
+	dbshare="dropbox-cli sharelink"
 
 # Aliases for connecting, disconnect and checking status of protonvpn.
 alias \

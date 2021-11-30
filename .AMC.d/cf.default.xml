@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <global>
+  <AutoCapture_window_size>1250x681+110+478</AutoCapture_window_size>
+  <ChooseColumns_window_size>328x252+1113+580</ChooseColumns_window_size>
+  <CreateProjectFile_window_size>657x578+980+516</CreateProjectFile_window_size>
+  <CreateProjectOption_window_size>327x371+1090+497</CreateProjectOption_window_size>
+  <Main_window_size>2552x1362+1+25</Main_window_size>
+  <Overwritten_window_size>750x582+1151+611</Overwritten_window_size>
+  <Preferences_window_size>687x798+902+152</Preferences_window_size>
+  <Printing_window_size>341x402+228+475</Printing_window_size>
+  <ProjectManager_window_size>357x508+988+486</ProjectManager_window_size>
   <SMTP></SMTP>
+  <SelectStudents_window_size>413x324+1094+567</SelectStudents_window_size>
+  <StudentsListKey_window_size>616x204+122+627</StudentsListKey_window_size>
+  <StudentsList_window_size>1096x822+723+294</StudentsList_window_size>
+  <Unrecognized_window_size>1185x859+61+212</Unrecognized_window_size>
   <annote_chsign>4</annote_chsign>
   <annote_ecart>5.5</annote_ecart>
   <annote_font_name>Linux Libertine O 12</annote_font_name>
   <ascii_filenames>1</ascii_filenames>
   <assoc_ncols>4</assoc_ncols>
-  <assoc_window_size></assoc_window_size>
+  <assoc_window_size>1255x1338+1286+37</assoc_window_size>
   <box_size_proportion>0.8</box_size_proportion>
   <bw_threshold>0.6</bw_threshold>
-  <checklayout_window_size>900x1255+1625+31</checklayout_window_size>
+  <checklayout_window_size>622x1338+646+37</checklayout_window_size>
   <conserve_taille>1</conserve_taille>
   <csv_name_headers></csv_name_headers>
   <csv_surname_headers></csv_surname_headers>
@@ -21,6 +34,7 @@ Regards.</defaut_email_text>
   <defaut_encodage_csv>UTF-8</defaut_encodage_csv>
   <defaut_encodage_liste>UTF-8</defaut_encodage_liste>
   <defaut_moteur_latex_b>xelatex</defaut_moteur_latex_b>
+  <defaut_name_field_type></defaut_name_field_type>
   <defaut_note_arrondi>inf</defaut_note_arrondi>
   <defaut_note_grain>0.5</defaut_note_grain>
   <defaut_note_max>20</defaut_note_max>
@@ -34,6 +48,14 @@ Mark: %s/%m (total score: %S/%M)</defaut_verdict>
   <defaut_verdict_q>&quot;%s/%m&quot;</defaut_verdict_q>
   <defaut_verdict_qc>&quot;X&quot;</defaut_verdict_qc>
   <delimiteur_decimal>,</delimiteur_decimal>
+  <df_annotatedemail_email_subject>Exam result</df_annotatedemail_email_subject>
+  <df_annotatedemail_email_text>Please find enclosed your annotated completed answer sheet.
+Regards.</df_annotatedemail_email_text>
+  <df_annotatedemail_email_use_html></df_annotatedemail_email_use_html>
+  <df_subjectemail_email_subject>Exam question</df_subjectemail_email_subject>
+  <df_subjectemail_email_text>Please find enclosed your question sheet.
+Regards.</df_subjectemail_email_text>
+  <df_subjectemail_email_use_html></df_subjectemail_email_use_html>
   <dir_opener>dolphin %d</dir_opener>
   <email_bcc></email_bcc>
   <email_cc></email_cc>
@@ -56,7 +78,7 @@ Mark: %s/%m (total score: %S/%M)</defaut_verdict>
   <img_viewer>gwenview</img_viewer>
   <imprimante></imprimante>
   <mailing_window_size></mailing_window_size>
-  <manual_window_size></manual_window_size>
+  <manual_window_size>1255x1338+1286+37</manual_window_size>
   <manuel_image_type>xpm</manuel_image_type>
   <marks_window_size></marks_window_size>
   <methode_impression>file</methode_impression>
@@ -72,11 +94,11 @@ Mark: %s/%m (total score: %S/%M)</defaut_verdict>
   <options_impression>
     <number-up>1</number-up>
     <print_answersheet></print_answersheet>
-    <repertoire>%HOME/Dropbox/01-QCM/BSG/2020/202012-survey/sujets</repertoire>
+    <repertoire>%HOME/Dropbox/01-QCM/aaSujets/202111-5A1A01-sujets</repertoire>
     <sides>two-sided-long-edge</sides>
   </options_impression>
   <pdf_viewer>zathura</pdf_viewer>
-  <preferences_window_size>888x1481+941+-4</preferences_window_size>
+  <preferences_window_size>490x878+266+250</preferences_window_size>
   <prepare_catalog>1</prepare_catalog>
   <prepare_indiv_solution>1</prepare_indiv_solution>
   <prepare_solution>1</prepare_solution>
@@ -85,6 +107,7 @@ Mark: %s/%m (total score: %S/%M)</defaut_verdict>
   <printer_useful_options>Staple Stapling StapleLocation StapleSet StapleOption</printer_useful_options>
   <project_icon_size>16</project_icon_size>
   <projects_home>%HOME/Dropbox/01-QCM/_AMC/Projets-QCM</projects_home>
+  <projects_list_window_size>357x508+988+486</projects_list_window_size>
   <rep_modeles>/home/greg/Dropbox/01-QCM/_AMC/Models</rep_modeles>
   <rep_projets>/home/greg/Dropbox/01-QCM/_AMC/Projets-QCM</rep_projets>
   <saisie_dpi>150</saisie_dpi>
@@ -100,9 +123,9 @@ Mark: %s/%m (total score: %S/%M)</defaut_verdict>
   <symbole_1_1_type>mark</symbole_1_1_type>
   <symboles_indicatives></symboles_indicatives>
   <symboles_trait>2</symboles_trait>
-  <taille_x_main>2528</taille_x_main>
-  <taille_y_main>1345</taille_y_main>
-  <tex_editor>texmaker</tex_editor>
+  <taille_x_main>551</taille_x_main>
+  <taille_y_main>739</taille_y_main>
+  <tex_editor>gvim</tex_editor>
   <tolerance_marque_inf>0.2</tolerance_marque_inf>
   <tolerance_marque_sup>0.2</tolerance_marque_sup>
   <try_three>1</try_three>

@@ -64,6 +64,25 @@ exec dropbox autostart y
 exec dropbox start
 
 #########################  global bindings   #########################
+#########################  EXIT i3			 #########################
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+# exit i3 (logs you out of your X session)
+# bindsym $mod+Shift+e 		exec --no-startup-id prompt "Exit i3?" "i3-msg exit"
+# bindsym $mod+Shift+e 		exec i3-msg exit
+bindsym $mod+Shift+e 		mode "$mode_system"
+
+
 #########################  windows and apps  #########################
 # Close current apps
 bindsym $mod+q				[con_id="__focused__" instance="^(?!dropdown_).*$"] kill
@@ -82,10 +101,6 @@ bindsym $mod+Shift+r 		restart
 
 # Lock screen
 bindsym $mod+XF86Eject 		exec "~/.scripts/screenlock.sh"
-
-# exit i3 (logs you out of your X session)
-# bindsym $mod+Shift+e 		exec --no-startup-id prompt "Exit i3?" "i3-msg exit"
-bindsym $mod+Shift+e 		exec i3-msg exit
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f 				fullscreen toggle
