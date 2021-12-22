@@ -167,6 +167,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 EDITOR='vim'
+editor='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

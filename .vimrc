@@ -22,9 +22,9 @@ Plugin 'Lokaltog/powerline'
 Plugin 'mboughaba/i3config.vim'
 
 Bundle 'ervandew/supertab'
-"Bundle 'sirver/ultisnips'
+Bundle 'sirver/ultisnips'
 " Snippets are separated from the engine. Add this if you want them:
-"Bundle 'honza/vim-snippets'
+Bundle 'honza/vim-snippets'
 
 Bundle 'ycm-core/YouCompleteMe'
 "if executable('latexmk')
@@ -90,9 +90,9 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 "if filereadable(expand("~/.vim/bundle/ultisnips/plugin/UltiSnips.vim"))
 	let g:UltiSnipsListSnippets = "<F5>"
 	let g:UltiSnipsEditSplit="vertical"
-	let g:UltiSnipsExpandTrigger = "<Tab>"
-	let g:UltiSnipsJumpForwardTrigger = "<Tab>"
-	let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"
+	let g:UltiSnipsExpandTrigger = "<Enter>"
+	let g:UltiSnipsJumpForwardTrigger = "<Enter>"
+	let g:UltiSnipsJumpBackwardTrigger = "<S-Enter>"
 "	let g:UltiSnipsEditSplit = "context"
 "let g:UltiSnipsSnippetDirectories=["UltiSnips"]
 	"call mkdir($HOME . "/.vim/bundle/UltiSnips", "p")
