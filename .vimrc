@@ -307,7 +307,7 @@ nnoremap ;v @v
 "@v : choiceshoriz <=> choices
 
 "Macro qui converti une liste de question format word en format LaTeX AMC
-let @a =':%s:^Tr\?u\?e\?\s*$:a.\t*True\rb.\tFalse:ge:%s:^Fa\?l\?s\?e\?\s*$:a.\tTrue\rb.\t*False:ge:%s:\([\$&%#_{}\\\^]\):\\\1:ge:%s:\~:\\textasciitilde{}:ge:%s:^[\s+\t+]*(*\(\w[\.)\-]\)[\s\t]*\*:*\1:ge:%s:^[\s\t]*\(\d\+\)[-\.)][\s\+\t\+]*\(.*\):\t\\end{choices}\r\t\\end{question}\r}\r\\element{groupA}{\r\t\\begin{question}{Q\1}\r\2\r\t\\begin{choices}:ge:%s:^[\s\t]*[\*+][\s\+\t\+]*(*\a[\.)\-]\s*\t*\(.*\):\t\t\\correctchoice{\1}:ge:%s:^[\s\+\t\+]*(*\a[\.)\-]\s*\t*\(.*\):\t\t\\wrongchoice{\1}:ge:g/^\s*$/d:%s: *\t*}:}:ge:%s:{ *:{:ge:%s:{question}{Q\(\d\)}:{question}{Q0\1}:ge:%s:{question}{Q\(\d\d\)}:{question}{Q0\1}:ge:%s:\c^\s\+\\\(wrongchoice\|correctchoice\){\(Aucune\?\|Tout\?e\?s\|All \(of\|the\)\|None of\|No answer\):\t\t\\lastchoices %Stop shuffling next choices\r\t\t\\\1{\2:ge:%s:\s\([:?]\s*}\?\)\s*$:\~\1:ge:%s:\(\d\)\s\([\$€]\):\1\~\2:ge :%s:\(\d\+\)\s\+\(p\|P\)oint:\1\~\2oint:ge:%s:\(\d\+\)\s\(\d\{3\}\):\1\~\2:ge:%s:\s\+»:\~»:ge :%s:«\s\+:«\~:ge@z:%s:\t\\begin{choices}\n\t\t\\\(wrongchoice\|correctchoice\){\(Vrai\|Yes\|Oui\|True\|Faux\|False\|No\|Non\)\(\.\?\)}\n\t\t\\\(wrongchoice\|correctchoice\){\(Faux\|False\|No\|Non\|Vrai\|Yes\|Oui\|True\)\(\.\?\)}\n\t\\end{choices}:\t\\begin{choiceshoriz}[o]\r\t\t\\\1{\2\3}\r\t\t\\\4{\5\6}\r\t\\end{choiceshoriz}:ge:nohlsGo%\elementgg'
+let @a =':%s:\v^\s+::g:%s:\v^(\w[\.\)-]) \*:*\1 :g:%s:^Tr\?u\?e\?\s*$:a.\t*True\rb.\tFalse:ge:%s:^Fa\?l\?s\?e\?\s*$:a.\tTrue\rb.\t*False:ge:%s:\([\$&%#_{}\\\^]\):\\\1:ge:%s:\~:\\textasciitilde{}:ge:%s:^[\s+\t+]*(*\(\w[\.)\-]\)[\s\t]*\*:*\1:ge:%s:^[\s\t]*\(\d\+\)[-\.)][\s\+\t\+]*\(.*\):\t\\end{choices}\r\t\\end{question}\r}\r\\element{groupA}{\r\t\\begin{question}{Q\1}\r\2\r\t\\begin{choices}:ge:%s:^[\s\t]*[\*+][\s\+\t\+]*(*\a[\.)\-]\s*\t*\(.*\):\t\t\\correctchoice{\1}:ge:%s:^[\s\+\t\+]*(*\a[\.)\-]\s*\t*\(.*\):\t\t\\wrongchoice{\1}:ge:g/^\s*$/d:%s: *\t*}:}:ge:%s:{ *:{:ge:%s:{question}{Q\(\d\)}:{question}{Q0\1}:ge:%s:{question}{Q\(\d\d\)}:{question}{Q0\1}:ge:%s:\c^\s\+\\\(wrongchoice\|correctchoice\){\(Aucune\?\|Tout\?e\?s\|All \(of\|the\)\|None of\|No answer\):\t\t\\lastchoices %Stop shuffling next choices\r\t\t\\\1{\2:ge:%s:\s\([:?]\s*}\?\)\s*$:\~\1:ge:%s:\(\d\)\s\([\$€]\):\1\~\2:ge :%s:\(\d\+\)\s\+\(p\|P\)oint:\1\~\2oint:ge:%s:\(\d\+\)\s\(\d\{3\}\):\1\~\2:ge:%s:\s\+»:\~»:ge :%s:«\s\+:«\~:ge@z:%s:\t\\begin{choices}\n\t\t\\\(wrongchoice\|correctchoice\){\(Vrai\|Yes\|Oui\|True\|Faux\|False\|No\|Non\)\(\.\?\)}\n\t\t\\\(wrongchoice\|correctchoice\){\(Faux\|False\|No\|Non\|Vrai\|Yes\|Oui\|True\)\(\.\?\)}\n\t\\end{choices}:\t\\begin{choiceshoriz}[o]\r\t\t\\\1{\2\3}\r\t\t\\\4{\5\6}\r\t\\end{choiceshoriz}:ge:nohlsGo%\elementgg'
 
 "Bold (visual mode)
 let @b = 'c{\bf }P'
@@ -331,7 +331,7 @@ endfunction
 let @h = ':call SwitchHoriz()@e'
 
 "Mettre le texte sélectionné en italique (visual mode)
-let @i = 'c\textif{}P'
+let @i = 'c\textit{}P'
 
 "Je ne sais pas
 let @j = ':%s:\\wrongchoice{je ne sais pas\.\?}:&\\scoring{0}:gei'
