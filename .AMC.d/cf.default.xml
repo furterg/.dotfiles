@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <global>
-  <AutoCapture_window_size>1250x681+83+451</AutoCapture_window_size>
+  <AutoCapture_window_size>1250x681+77+445</AutoCapture_window_size>
   <ChooseColumns_window_size>328x252+1113+580</ChooseColumns_window_size>
   <CreateProjectFile_window_size>657x578+944+480</CreateProjectFile_window_size>
   <CreateProjectOption_window_size>327x352+1054+461</CreateProjectOption_window_size>
-  <Main_window_size>1255x1338+13+37</Main_window_size>
+  <Main_window_size>2552x1362+1+25</Main_window_size>
   <Overwritten_window_size>750x582+1148+608</Overwritten_window_size>
   <Preferences_window_size>687x798+875+125</Preferences_window_size>
-  <Printing_window_size>341x402+183+430</Printing_window_size>
-  <ProjectManager_window_size>357x508+798+477</ProjectManager_window_size>
+  <Printing_window_size>341x402+180+427</Printing_window_size>
+  <ProjectManager_window_size>357x508+768+447</ProjectManager_window_size>
   <SMTP></SMTP>
   <SelectStudents_window_size>413x324+1094+567</SelectStudents_window_size>
   <StudentsListKey_window_size>616x204+121+624</StudentsListKey_window_size>
-  <StudentsList_window_size>1124x897+714+267</StudentsList_window_size>
-  <Unrecognized_window_size>1185x859+56+197</Unrecognized_window_size>
+  <StudentsList_window_size>1096x822+712+261</StudentsList_window_size>
+  <Unrecognized_window_size>1185x859+55+194</Unrecognized_window_size>
   <annote_chsign>4</annote_chsign>
   <annote_ecart>5.5</annote_ecart>
   <annote_font_name>Linux Libertine O 12</annote_font_name>
@@ -22,7 +22,7 @@
   <assoc_window_size>1255x1338+1286+37</assoc_window_size>
   <box_size_proportion>0.8</box_size_proportion>
   <bw_threshold>0.6</bw_threshold>
-  <checklayout_window_size>835x1338+860+37</checklayout_window_size>
+  <checklayout_window_size>1255x1338+1286+37</checklayout_window_size>
   <conserve_taille>1</conserve_taille>
   <csv_name_headers></csv_name_headers>
   <csv_surname_headers></csv_surname_headers>
@@ -80,7 +80,7 @@ Regards.</df_subjectemail_email_text>
   <mailing_window_size></mailing_window_size>
   <manual_window_size>1255x1338+1286+37</manual_window_size>
   <manuel_image_type>xpm</manuel_image_type>
-  <marks_window_size></marks_window_size>
+  <marks_window_size>1255x1338+1286+37</marks_window_size>
   <methode_impression>file</methode_impression>
   <n_procs>12</n_procs>
   <nonascii_projectnames></nonascii_projectnames>
@@ -107,7 +107,7 @@ Regards.</df_subjectemail_email_text>
   <printer_useful_options>Staple Stapling StapleLocation StapleSet StapleOption</printer_useful_options>
   <project_icon_size>16</project_icon_size>
   <projects_home>%HOME/Dropbox/01-QCM/_AMC/Projets-QCM</projects_home>
-  <projects_list_window_size>357x508+798+477</projects_list_window_size>
+  <projects_list_window_size>357x508+768+447</projects_list_window_size>
   <rep_modeles>/home/greg/Dropbox/01-QCM/_AMC/Models</rep_modeles>
   <rep_projets>/home/greg/Dropbox/01-QCM/_AMC/Projets-QCM</rep_projets>
   <saisie_dpi>150</saisie_dpi>

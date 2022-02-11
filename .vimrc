@@ -337,7 +337,7 @@ let @i = 'c\textit{}P'
 let @j = ':%s:\\wrongchoice{je ne sais pas\.\?}:&\\scoring{0}:gei'
 
 "classlist from CURSUS to CSV
-let @k = 'ggjVG:sort u:%s:^$\n::ge:%s:\t:,:ge:%s:\(\a\),\(\a\):\1 \2:ge ggcccodelev,name'
+let @k = 'gg:%s:\v^\D.*$\n::geggVG:sort u:%s:\v^$\n::ge:%s:\t:,:ge:%s:\(\a\),\(\a\):\1 \2:ge ggOcodelev,name'
 "Lastchoice sur la ligne du dessus
 let @l = 'O\lastchoices %Stop shuffling next choices@e'
 
