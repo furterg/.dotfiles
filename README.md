@@ -59,7 +59,8 @@ sudo apt install xclip
 ```
 ## tmux plugin manager ([tpm](https://github.com/tmux-plugins/tpm))
 
-Install tpm:
+### Install tpm:
+
 ```
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
@@ -67,6 +68,25 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # type this in terminal if tmux is already running
 tmux source ~/.tmux.conf
 ```
+### Installing plugins
+
+* Add new plugin to `~/.tmux.conf with set -g @plugin` '...'
+* Press `prefix + I` (capital i, as in Install) to fetch the plugin.
+
+### Key bindings
+
+`prefix + I`
+
+* Installs new plugins from GitHub or any other git repository
+* Refreshes TMUX environment
+
+`prefix + U`
+
+* updates plugin(s)
+
+`prefix + alt + u`
+
+* remove/uninstall plugins not on the plugin list
 
 ## [tmux powerline](https://github.com/erikw/tmux-powerline)
 
