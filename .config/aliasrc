@@ -3,6 +3,12 @@
 # Use neovim for vim if present.
 # [ -x "$(command -v nvim)" ] && alias vim="nvim" vimdiff="nvim -d"
 
+# Alias for AMC
+alias amc='AMC.sh'
+
+# Alias for screen positionning
+alias xrd='xrandr --output DP-2 --mode 2560x1440 --rotate normal --primary --output DP-0 --mode 2560x1440 --rotate left --left-of DP-2'
+
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
 	cp="cp -iv" \
@@ -15,14 +21,14 @@ alias \
 # For youtube viewer and downloader
 alias \
 	mkd="mkdir -pv" \
-	yt='youtube-dl --audio-format "best" --add-metadata -i' \
+	yt='yt-dlp --audio-format "best" --add-metadata -i' \
 	yte='yt --exec "mpv"' \
 	ytv="yte" \
 	yta="yt -x -f bestaudio/best" \
 	YT="youtube-viewer -C --safe-search=none --player=mpv --ytdl-cmd=yt" \
 	ffmpeg="ffmpeg -hide_banner"
 
-# alias yt="youtube-dl --add-metadata -i"
+# alias yt="yt-dlp --add-metadata -i"
 
 # Colorize commands when possible.
 alias \
@@ -49,8 +55,9 @@ alias \
 	cfv="vim $HOME/.vimrc" \
 	cfa="vim $HOME/.config/aliasrc" \
 	anaconda="/opt/anaconda/bin/anaconda-navigator" \
-	sideria="ssh root@195.133.81.76" \
-	dbshare="dropbox-cli sharelink"
+	dbshare="dropbox-cli sharelink" \
+	syno='sudo mount /mnt/synology/Media && sudo mount /mnt/synology/greg' \
+	reso='sudo echo "nameserver 208.67.222.222" | sudo tee -a /etc/resolv.conf && sudo echo "nameserver 208.67.220.220" | sudo tee -a /etc/resolv.conf' \
 
 # Aliases for connecting, disconnect and checking status of protonvpn.
 alias \
