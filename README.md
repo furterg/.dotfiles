@@ -51,4 +51,34 @@ ln -s ~/.config/mimeapps.list ~/.local/share/applications/default.list
 
 The icons rely on the package `ttf-icomoon-feather`
 
+# tmux
+
+Don't forget to install *xclip* to allow copying to clipboard:
+```
+sudo apt install xclip
+```
+## tmux plugin manager ([tpm](https://github.com/tmux-plugins/tpm))
+
+Install tpm:
+```
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
+# Reload TMUX environment so TPM is sourced:
+# type this in terminal if tmux is already running
+tmux source ~/.tmux.conf
+```
+
+## tmux powerline
+
+Install the fond 0XProto in `~/.local/share/fonts` using the following command line:  
+```
+curl -OL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/0xProto.zip | unzip
+```
+
+### Change the theme:
+```
+export EDITOR=vim
+mkdir -p ~/.config/tmux-powerline/themes
+cp ~/.config/tmux/plugins/tmux-powerline/themes/default.sh ~/.config/tmux-powerline/themes/my-theme.sh
+$EDITOR ~/.config/tmux-powerline/themes/my-theme.sh
 
