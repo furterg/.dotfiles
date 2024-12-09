@@ -2,6 +2,7 @@
 
 # Set keyboard and modifiers
 exec --no-startup-id setxkbmap -option apple:badmap
+exec --no-startup-id xrandr --output DP-2 --mode 2560x1440 --rotate normal --primary --output DP-0 --mode 2560x1440 --rotate left --left-of DP-2
 
 # set modifier
 set $mod Mod4
@@ -10,6 +11,9 @@ set $alt Mod1
 # set focus not to follow mouse
 focus_follows_mouse no
 
+# ProtonVPN fix
+exec --no-startup-id gnome-keyring-daemon --start
+exec --no-startup-id nm-applet
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -51,7 +55,8 @@ client.background           #2f343f
 
 ##################   autostart     #################################
 # set wallpaper
-exec --no-startup-id hsetroot -cover $HOME/Pictures/manjaro-cat.jpg
+exec --no-startup-id hsetroot -display DP-2 -cover $HOME/Pictures/manjaro-cat.jpg
+exec --no-startup-id hsetroot -display DP-0 -cover $HOME/Pictures/arch_matrix.jpg
 exec --no-startup-id xsettingsd &
 
 # open tmux dropdown window
@@ -166,19 +171,22 @@ bindsym $mod+r mode "$resize"
 #########################  Status bar definition  ####################
 # panel
 bar {
-#     	tray_output HDMI-1
-#     	tray_output primary
-#     	output HDMI-1
-#     	output primary
+     	tray_output primary
+#    	tray_output DP-0
+#		tray_output DP-2
+     	output primary
+     	output DP-0
+#		output DP-2
 
         colors {
         background #2f343f
         statusline #2f343f
         separator #4b5262
+		focused_separator #336eff 
 
         # colour of border, background, and text
         focused_workspace       #2f343f #bf616a #d8dee8
-        active_workspace        #2f343f #2f343f #d8dee8
+        active_workspace        #2f343f #336eff #d8dee8
         inactive_workspace      #2f343f #2f343f #d8dee8
         urgent_workspace        #2f343f #ebcb8b #2f343f
     }
@@ -186,6 +194,7 @@ bar {
         position top
         mode dock
         modifier none
+		separator_symbol "::"
 }
 
 # Toggle status bar display
@@ -195,20 +204,32 @@ bindsym $mod+b				bar mode toggle
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
 
+# Workspaces 1 to 5 on the left (vertical) monitor
+workspace 1 output DP-2
+workspace 2 output DP-2
+workspace 3 output DP-2
+workspace 4 output DP-2
+workspace 5 output DP-2
+
+# Workspaces 6 to 0 on the right (horizontal) monitor
+workspace 6 output DP-0
+workspace 7 output DP-0
+workspace 8 output DP-0
+workspace 9 output DP-0
+workspace 10 output DP-0
+
 workspace_auto_back_and_forth yes
 
-set $ws1 "1"
-set $ws2 "2"
+set $ws1 "1:Brave"
+set $ws2 "2:Dolphin"
 set $ws3 "3:Mail"
-set $ws4 "4"
-set $ws5 "5"
-set $ws6 "6"
+set $ws4 "4:AMC"
+set $ws5 "5:Steam"
+set $ws6 "6:PyCharm"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9:Steam"
-set $ws10 "10:TS"
-set $ws11 "11"
-set $ws12 "12:"
+set $ws9 "9"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -265,7 +286,7 @@ bindsym $mod+$alt+e 		exec dolphin
 
 # Open Joplin
 bindsym $mod+$alt+j 		exec joplin-desktop
-bindsym $mod+$alt+g 		exec steam ; workspace 9:Steam
+bindsym $mod+$alt+g 		exec steam ; workspace 5:Steam
 bindsym $mod+$alt+m 		exec thunderbird ; workspace 3:Mail
 bindsym $mod+$alt+w 		exec remmina ; workspace 10:TS
 bindsym $mod+$alt+z 		exec zoom
@@ -282,6 +303,7 @@ for_window [class=".*"] border pixel 3
 
 # Assign windows to desktops
 assign [class=brave-browser|Firefox|Transmission-gtk] 1
+assign [class=jetbrains-pycharm-ce] "6:PyCharm"
 assign [class=Mail|Thunderbird|akregator] → number "3:Mail"
 assign [class=org.remmina.Remmina] → number "10:TS"
 assign [class=Steam] → number "9:Steam"
