@@ -68,9 +68,9 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 tmux source ~/.tmux.conf
 ```
 
-## tmux powerline
+## [tmux powerline](https://github.com/erikw/tmux-powerline)
 
-Install the fond 0XProto in `~/.local/share/fonts` using the following command line:  
+Install the fond 0XProto from [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts?tab=readme-ov-file#option-1-release-archive-download) in `~/.local/share/fonts` using the following command line:  
 ```
 curl -OL https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/0xProto.zip | unzip
 ```
