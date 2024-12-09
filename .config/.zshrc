@@ -76,7 +76,7 @@ bindkey '^e' edit-command-line
 
 #####################################################################
 # If you come from bash you might have to change your $PATH.
- export PATH=$HOME/bin:/usr/local/bin:$PATH
+ export PATH=$HOME/bin:/usr/local/bin:/opt/anaconda/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/usr/share/oh-my-zsh"
@@ -200,3 +200,5 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 echo "Here's a couple of useful aliases\n"
 cat $HOME/.config/aliaslist.txt | shuf -n 5 | lolcat
 
+# Add AMC scripts folder to PATH
+export PATH="/home/greg/Dropbox/01-QCM/_Exams101/scripts/exam_scripts:/home/greg/Dropbox/01-QCM/_Exams101/scripts/AMCresultsAnalysis:$PATH"
